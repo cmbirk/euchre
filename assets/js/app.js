@@ -1,4 +1,5 @@
 var imports = [
+  'euchre.directives',
   'ui.bootstrap'
 ];
 

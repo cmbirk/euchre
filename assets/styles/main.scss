@@ -1,0 +1,12 @@
+html{
+  height:100%;
+}
+
+body{
+  height:100%;
+}
+
+div.main{
+  height:100%;
+  @include background('/images/paper_fibers.png', '0 0', 'repeat');
+}
