@@ -8,5 +8,5 @@ body{
 
 div.main{
   height:100%;
-  @include background('/images/paper_fibers.png', '0 0', 'repeat');
+  @include background('/images/grey.png', '0 0', 'repeat');
 }
