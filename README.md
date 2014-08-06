@@ -1,3 +1,3 @@
-# euchre
+Euchre, but online
 
-a [Sails](http://sailsjs.org) application
+**Don't read too much into this yet**
