@@ -4,22 +4,27 @@ var imports = [
   'ui.router'
 ];
 
-var app = angular.module('euchre', imports);
+var app = angular.module('euchreApp', imports);
 
 //Angular Routing
-app.config(['$stateProvider', '$urlRouterProvider',
-  function ($stateProvider, $urlRouterProvider){
+app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
+  function ($stateProvider, $urlRouterProvider, $locationProvider){
+
+    $urlRouterProvider.otherwise("/");
+
     $stateProvider
     .state('index', {
       url: "/",
       controller: "HomePageController",
       templateUrl: "templates/homepage.html",
       data: {title: "Euchre.io"}
+    })
+    .state('learn', {
+      url: "/learn",
+      controller: "LearnPageController",
+      templateUrl: "templates/learn.html"
     });
-    // .state('profile-page', {
-    //   url: "/user/{id}",
-    //   controller: "ProfilePageController",
-    //   templateUrl: "templates/profile.html"
-    // });
+
+    $locationProvider.html5Mode(true);
   }
 ]);
