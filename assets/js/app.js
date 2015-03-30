@@ -1,6 +1,7 @@
 var imports = [
   'euchre.controllers',
   'euchre.directives',
+  'angular-md5',
   'ui.bootstrap',
   'ui.router'
 ];
